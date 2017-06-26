@@ -35,6 +35,9 @@ public class MvcDemoServletTwo extends HttpServlet {
 		// step 2: add students to request object
 		request.setAttribute("student_list",  students);
 		
+		// step 3: get request dispatcher
+		RequestDispatcher dispatcher = request.getRequestDispatcher("view_students_t.jsp");
+		
 		
 	}
 
