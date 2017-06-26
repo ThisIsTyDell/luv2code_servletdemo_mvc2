@@ -1,5 +1,7 @@
 package com.luv2code.servletdemo.mvctwo;
 
 public class Student {
-	
+	private String firstName;
+	private String lastName;
+	private String email;
 }
