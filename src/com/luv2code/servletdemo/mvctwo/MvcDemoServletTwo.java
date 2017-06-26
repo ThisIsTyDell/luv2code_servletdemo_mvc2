@@ -3,6 +3,7 @@ package com.luv2code.servletdemo.mvctwo;
 import java.io.IOException;
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -38,7 +39,8 @@ public class MvcDemoServletTwo extends HttpServlet {
 		// step 3: get request dispatcher
 		RequestDispatcher dispatcher = request.getRequestDispatcher("view_students_t.jsp");
 		
-		
+		// step 4: forward to JSP
+		dispatcher.forward(request, response);
 	}
 
 	/**
