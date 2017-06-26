@@ -32,6 +32,8 @@ public class MvcDemoServletTwo extends HttpServlet {
 		// step 1: get the student data from helper class (model)
 		List<Student> students = StudentDataUtil.getStudents();
 		
+		// step 2: add students to request object
+		request.setAttribute("student_list",  students);
 		
 		
 	}
